@@ -1,41 +1,70 @@
-<!-- @format -->
-# Welcome to The AI Guild 🚀
+# RAG Project
 
-**This code is a part of a module in our vibrant AI community 🚀[Join the AI Guild Community](https://bit.ly/ai-guild-join), where like-minded entrepreneurs and programmers come together to build real-world AI-based solutions.**
+A Retrieval-Augmented Generation (RAG) application built with Python and ChromaDB. The project retrieves relevant information from a local knowledge base and uses the retrieved context to generate more grounded responses.
 
-### What is The AI Guild?
-The AI Guild is a collaborative community designed for developers, tech enthusiasts, and entrepreneurs who want to **build practical AI tools** and solutions. Whether you’re just starting or looking to level up your skills, this is the place to dive deeper into AI in a supportive, hands-on environment.
+## Features
 
-### Why Join Us?
-- **Collaborate with Like-Minded Builders**: Work alongside a community of individuals passionate about AI, sharing ideas and solving real-world problems together.
-- **Access to Exclusive Resources**: Gain entry to our Code & Template Vault, a collection of ready-to-use code snippets, templates, and AI projects.
-- **Guided Learning Paths**: Follow structured paths, from AI Basics for Builders to advanced classes like AI Solutions Lab, designed to help you apply your knowledge.
-- **Weekly Live Calls & Q&A**: Get direct support, feedback, and guidance during live sessions with the community.
-- **Real-World AI Projects**: Work on projects that make an impact, learn from others, and showcase your work.
+- Retrieval-Augmented Generation (RAG)
+- Semantic document retrieval
+- Vector storage using ChromaDB
+- Persistent vector database
+- Environment variable management with python-dotenv
+- Python-based implementation
 
-### Success Stories
-Here’s what some of our members are saying:
-- **"Joining The AI Guild has accelerated my learning. I’ve already built my first AI chatbot with the help of the community!"**
-- **"The live calls and feedback have been game-changers. I’ve implemented AI automation in my business, saving hours each week."**
+## Project Structure
 
-### Who is This For?
-If you’re eager to:
-- Build AI tools that solve real problems
-- Collaborate and learn from experienced AI practitioners
-- Stay up-to-date with the latest in AI development
-- Turn your coding skills into actionable solutions
+RAG-Project/
+├── app.py
+├── requirements.txt
+├── news_articles/
+├── chroma_persistent_storage/
+├── .gitignore
+└── README.md
 
-Then **The AI Guild** is the perfect fit for you.
+## Installation
 
-### Frequently Asked Questions
-- **Q: Do I need to be an expert to join?**
-  - **A:** Not at all! The AI Guild is designed for all skill levels, from beginners to advanced developers.
-- **Q: Will I get personalized support?**
-  - **A:** Yes! You’ll have access to live Q&A sessions and direct feedback on your projects.
-- **Q: What kind of projects can I work on?**
-  - **A:** You can start with small projects like chatbots and automation tools, and progress to more advanced AI solutions tailored to your interests.
+Clone the repository:
 
-### How to Get Started
-Want to dive deeper and get the full experience? 🚀[Join the AI Guild Community](https://bit.ly/ai-guild-join) and unlock all the benefits of our growing community.
+git clone https://github.com/venkatalakshmi-ch/RAG-Project.git
 
-We look forward to seeing what you’ll build with us!
+Navigate to the project:
+
+cd RAG-Project
+
+Create a virtual environment:
+
+python3 -m venv env
+
+Activate it on macOS/Linux:
+
+source env/bin/activate
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+## Environment Variables
+
+Create a `.env` file in the project directory and add the required API keys.
+
+Example:
+
+API_KEY=your_api_key_here
+
+Do not commit the `.env` file to GitHub.
+
+## Run the Application
+
+python3 app.py
+
+## Technologies
+
+- Python
+- ChromaDB
+- Retrieval-Augmented Generation (RAG)
+- Vector Embeddings
+- LLM APIs
+
+## Author
+
+Venkat Lakshmi Chinthalapudi
